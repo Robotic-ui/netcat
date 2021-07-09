@@ -22,7 +22,7 @@ class NetCat:
         self.socket.setsockopt(socket.SQL_SOCKET, socket.SO_REUSEADDR, 1)
     def run(self):
         if self.args.listen:
-            self.listen9()
+            self.listen()
         else:
             self.send()
     def send(self):
